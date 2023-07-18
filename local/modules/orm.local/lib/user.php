@@ -22,17 +22,17 @@ class UserTable extends DataManager
     public static function getMap()
     {
         return [
-            'ID'              => new ORM\Fields\IntegerField('ID', [
+            new ORM\Fields\IntegerField('ID', [
                 'primary'      => true,
                 'autocomplete' => true,
             ]),
-            'CREATED_BY'      => new ORM\Fields\IntegerField('CREATED_BY', [
+            new ORM\Fields\IntegerField('CREATED_BY', [
                 'required' => true,
             ]),
-            'NAME'            => new ORM\Fields\StringField('NAME', [
+            new ORM\Fields\StringField('NAME', [
                 'required' => true,
             ]),
-            'CREATED_BY_USER' => new ORM\Fields\Relations\Reference(
+            new ORM\Fields\Relations\Reference(
                 'CREATED_BY_USER',
                 '\Bitrix\Main\User',
                 ['=this.CREATED_BY' => 'ref.ID'],
