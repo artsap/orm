@@ -17,7 +17,7 @@ class UserTable extends DataManager
     }
 
     /**
-     * Массив сущностей (полей таблицы) с которыми будем работать
+     * Массив сущности (полей таблицы) с которыми будем работать
      */
     public static function getMap()
     {

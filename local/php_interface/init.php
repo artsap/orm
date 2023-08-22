@@ -27,6 +27,6 @@ class DemoClass
     public static function add($event)
     {
         $fields = $event->getParameter('fields');
-        // echo '<h3>Добавили ' . $fields['NAME'] . '</h3>';
+        //echo '<h3>Добавили ' . $fields['NAME'] . '</h3>';
     }
 }
